@@ -13,9 +13,16 @@ arrayData.forEach(function (element){
 });
 
 
-
 arrayData.forEach(element => {
     if(element.name =="fullname"){
 
     }
 });
+
+arrayData.forEach(item);
+
+let item = function (element){
+    if(element.name =="fullname"){
+
+    }
+}
