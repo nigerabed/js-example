@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validering</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script1.js"></script>
+  </head>
+  <body>
+    <form class="contactForm" novalidate >
+      <label>
+        name
+        <input type="text" name="name" minlength="3" maxlength="7" required />
+        <span class="statusMessage"></span>
+      </label>
+
+      <label>
+        email
+        <input type="email" name="email" required />
+         <span class="statusMessage"></span>
+      </label>
+
+      <label>
+        telephone
+        <input type="tel" name="phone" minlength="3" maxlength="15" required />
+        <span class="statusMessage"></span>
+      </label>
+
+      <label>
+        Besked
+        <textarea name="message"  required></textarea>
+      </label>
+      <button type="submit">send</button>
+    </form>
+  </body>
+</html>
