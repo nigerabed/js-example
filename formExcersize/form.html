@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="form.css" />
+    <script defer src="form.js"></script>
+  </head>
+  <body>
+    <form class="contactForm" novalidate>
+      <label>
+        Student Name :
+        <input
+          type="text"
+          name="fullname"
+          minlength="3"
+          maxlength="7"
+          required
+        />
+        <span class="statusMessage"></span>
+      </label>
+      <label>
+        Student Age :
+        <input type="number" name="age" required />
+        <span class="statusMessage"></span>
+      </label>
+
+      <label
+        >sex
+        <select name="sex">
+          <option value="">select gender</option>
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+        <span class="statusMessage" ></span>
+      </label>
+
+      <button type="submit" class="btn">Check Student</button>
+    </form>
+
+    <div>
+      <h1>Student List:</h1>
+      <div>
+        <ul id="studentList"></ul>
+      </div>
+    </div>
+  </body>
+</html>

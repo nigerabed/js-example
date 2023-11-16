@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo task</title>
+    <link rel="stylesheet" href="todo.css">
+    <script defer src="todo.js"></script>
+</head>
+<body>
+   <form id="todo-form" novalidate >
+    <label >
+        New task : 
+        <input type="text" name="todo-task" id="todo-task" required>
+        <span class="statusMessage" ></span>
+    </label>
+    <button type="submit">add task</button>
+    </form>
+   
+
+    
+    <div>
+      <h1>Tasks:</h1>
+      <div>
+        <ul id="taskList"></ul>
+      </div>
+    </div>
+</body>
+</html>

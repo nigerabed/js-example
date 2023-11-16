@@ -1,0 +1,39 @@
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  gap: 1em;
+  width: 30em;
+  padding: 1em;
+  margin: auto;
+  margin-top: 3em;
+  background-color: rgba(241, 236, 236, 0.938);
+  box-shadow: 0 0 3px hsla(0, 0%, 19%, 0, 435);
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+form button {
+  background-color: rgb(172, 172, 238);
+  width: 30%;
+  margin: auto;
+  border-radius: 0.5em;
+  height: 2em;
+}
+
+form input {
+  border-radius: 0.5em;
+  height: 2em;
+}
+
+form select {
+  border-radius: 0.5em;
+  height: 2em;
+}
+
+.statusMessage {
+  color: red;
+}
