@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Zalando Online Shop</h1>
+    <h2>Your are logged In as Admin</h2>
+
+    <div id="message" class="success">
+        Succesfly changes the order status!
+
+    </div>
+
+    <form action="" id="order-update">
+      <fieldset>
+        <legend>Change order Status:</legend>
+        <label for="">Order Number</label>
+        <input type="text" name="orderid" required />
+        <label for="">Order Status</label>
+        <select name="status">
+          <option value="">Choose your status</option>
+
+          <option value="Ordered">Ordered</option>
+          <option value="Delivered">Delivered</option>
+          <option value="Returned">Returned</option>
+          <option value="Refund">Refund</option>
+        </select>
+        <button type="submit">Save</button>
+      </fieldset>
+    </form>
+
+    <h3>Your Order History</h3>
+
+    <ul id="orderList"></ul>
+  </body>
+</html>
